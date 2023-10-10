@@ -1,0 +1,100 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.parentHeader{
+  box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.504);
+  position: relative;
+  z-index: 10;
+}
+.appHeader{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 55px;
+}
+@media (min-width:500px) {
+  .menuIcon{
+    display: none;
+  }
+}
+
+@media (max-width:500px) {
+  .menubig{
+    display: none ;
+  }
+}
+.btnMenu{
+  transform: translateX(-50%);
+  margin-top: 40px;
+}
+.PageContent{
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.ant-ribbon-wrapper{
+  max-width: 100%;
+}
+.sorted{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.ribbon{
+  margin: 8px;
+}
+.Cards{
+  margin: 40px 10px 10px;
+  text-align: center;
+}
+@media (max-width:592px) {
+  .Cards{
+    width: 350px;
+  }
+}
+.loadCenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.ImageItem{
+  height: 150px !important;
+  width: 150px !important;
+  object-fit: scale-down;
+}
+.AppFooter{
+  height: 55px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.foote{
+  color: white !important;
+  transition: 0.3s;
+}
+.foote:hover{
+  color: rgb(206, 206, 246) !important;
+}
+@media (max-width:500px) {
+  .foote:first-child{
+    display: none;
+  }
+  .foote:nth-child(2){
+    display: none;
+  }
+}
+.ShoppingCart{
+  font-size:'25px';
+   margin-left: 30px;
+   text-decoration: none;
+   color: #0092b7 !important;
+}
+
